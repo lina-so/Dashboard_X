@@ -1,6 +1,61 @@
 <?php
 
 return[
+    "Pcs"=>"حبة",
+    "Kg"=>"كيلو",
+    "CTN"=>"كرتون",
+    "Ream"=>"ربطة",
+    "pack"=>"علبة",
+    "Oz"=>"أونص",
+    "White Paper"=>"ورق ابيض",
+    "Kraft Paper"=>"ورق كرافت بني",
+    "Foiling Effect"=>" تأثير بصمة",
+    "Embossing Effect"=>"تأثير بروز ",
+    "Spot UV Effect"=>" تأثير يوڤي",
+    "offset printing"=>"طباعة اوفست",
+    "flexo printing "=>"طباعة فليكسو",
+    "Paper Cup Lid"=>"غطاء كوب ورقي",
+    "PP material"=>"بولي بروبلين",
+    "PS material"=>"بوليستيرين",
+    "White Color"=>" لون ابيض",
+    "Black Color"=>"لون اسود",
+    "Clear Color"=>"لون شفاف",
+    "Sip Lid"=>"غطاء رشفة",
+    "Reclosable Lid"=>"غطاء قفل",
+    "PET"=>"بولي ايثيلين",
+    "Classic model"=>"موديل كلاسيك",
+    "U-Shaped model"=>"U موديل حرف ",
+    "Plastic Cup Lid"=>"غطاء كوب بلاستيك",
+    "Flat"=>" غطاء مسطح",
+    "Dome"=>"غطاء قبة",
+    "Semi-Dome"=>"غطاء شبه قبة",
+    "Reclosable"=>"غطاء قفل",
+    "Handle Paper Bag"=>"كيس ورقي بيد",
+    "Gusset Width"=>"عرض القاعدة",
+    "Paper Color"=>"لون الورق",
+    "Paper Thickens"=>"سماكة الورق",
+    "Handle Model"=>"نوع اليد",
+    "Twisted Handle"=>"يد مبرومة",
+    'Flat Handle'=>"يد مسطحة",
+    "Punched-Out Handle"=>" يد مخروق",
+    "Brown Kraft"=>"ورق ابيض",
+    "White Paper"=>"ورق كرافت بني",
+    "Lid model"=>"موديل الغطاء",
+    "Cup Model"=>"موديل الكوب",
+    "Handleless Paper Bag"=>"كيس ورقي بدون يد",
+
+
+
+
+
+
+
+
+
+
+
+    "ProjectID"=>"رقم المشروع",
+    "proccessID"=>"رقم العملية",
     "Find"=>"أوجد",
     "There Is No Data Please Select Two Dates"=>"لا يوجد بيانات الرجاء اختيار التواريخ للبدء",
     "End Date"=>"تاريخ النهاية",
@@ -138,7 +193,7 @@ return[
     "Logistics Service"=>"الخدمة اللوجستية",
     "Design Service"=>"خدمة التصميم",
     "Finger Print Color"=>"لون بصمة الإصبع",
-    "UOM"=>"وحدة القياس",
+    "UOM"=>"وحدة قياس الكمية",
     "Single Board Width"=>"عرض لوحة واحدة",
     "Black Foil"=>"رقائق سوداء",
     "Window Width"=>"عرض النافذة",
@@ -229,8 +284,8 @@ return[
     "Paper Cup Single Wall"=>"كوب ورق حائط واحد",
     "Paper Cup Double Wall"=>"كوب ورق مزدوج الجدار",
     "Model"=>"نموذج",
-    "Single Wall"=>"جدار واحد",
-    "Double Wall"=>"جدار مزدوج",
+    "Single Wall"=>"موديل سنجل",
+    "Double Wall"=>"موديل دبل",
     "Length"=>"الطول",
     "Width"=>"العرض",
     "Height"=>"الارتفاع",

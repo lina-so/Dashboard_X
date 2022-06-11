@@ -164,6 +164,25 @@ class ProcessController extends Controller
         // dd($margin);
         return view('proccessStatistics',compact('marginProccess','id','daysPer','days','remainingDays','latelyDays','leadTime'));
     }
+
+
+  
+
+    public function projectStatistics()
+    {
+        $projectStatistics= DB::table("processes")
+        ->select("processes.project_id as ProjectID",
+                 "processes.id as proccessID",
+                 "processes.LeadTime as leadtime",
+                  DB::raw("(SELECT suppliers.supplier_organization_name as supplierName from suppliers where  processes.supplier_id=suppliers.id) as supplierName"),
+                  DB::raw("(SELECT products.product_class as productName from products where  processes.product_id=products.id) as productName"))
+        ->get()->toArray() ;
+
+        
+        // dd($projectStatistics);
+        // dd( gettype($projectStatistics));
+        return view('projectStatistics',compact('projectStatistics'));
+    }
     ////
     public function search()
     {
@@ -183,6 +202,8 @@ class ProcessController extends Controller
         return view('margin',compact('margin'));
 
     }
+
+
     /**
      * Remove the specified resource from storage.
      *

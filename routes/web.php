@@ -33,6 +33,10 @@ Route::get("marginUser/chart", [App\Http\Controllers\StockController::class, 'ma
 //proccess Statistics Route
 Route::get("proccessStatistics/{id}", [App\Http\Controllers\ProcessController::class, 'proccessStatistics'])->name('proccessStatistics');
 
+//project statistics Route
+Route::get("projectStatistics", [App\Http\Controllers\ProcessController::class, 'projectStatistics'])->name('projectStatistics');
+
+
 //Product Statistics Route
 Route::get("productStatistics", [App\Http\Controllers\prodStatisticController::class, 'productStatistics'])->name('productStatistics');
 Route::get("Statistics", [App\Http\Controllers\prodStatisticController::class, 'Statistics'])->name('Statistics');
