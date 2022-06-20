@@ -98,7 +98,7 @@ class prodStatisticController extends Controller
      public function Statistics9()
      {
 
-         $corrugatedBox=DB::select('select * from corrugated_boxes');
+         $corrugatedBox=DB::select('select * from carton_boxes');
         //  dd($corrugatedBox);
          return view('prodStatistic.corrugated_boxes',compact('corrugatedBox'));
        

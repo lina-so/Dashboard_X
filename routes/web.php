@@ -100,7 +100,7 @@ Route::get('/doownload/{id}', [App\Http\Controllers\PDFController::class, 'doown
 
 Route::resource('add', App\Http\Controllers\AddadminController::class);
 
-
+// WetWipes
 Route::resource('product', App\Http\Controllers\ProductController::class);
 Route::post('product/create2', [App\Http\Controllers\ProductController::class, 'create2'])->name('product.create2');
 Route::resource('product/PaperBox', App\Http\Controllers\PaperBoxController::class);
@@ -114,6 +114,18 @@ Route::resource('product/PlasticBag', App\Http\Controllers\PlasticBagController:
 Route::resource('product/SachelBag', App\Http\Controllers\SachelBagController::class);
 Route::resource('product/CorrugatedBox', App\Http\Controllers\CorrugatedBoxController::class);
 Route::resource('product/Other', App\Http\Controllers\OtherController::class);
+Route::resource('product/PaperBox', App\Http\Controllers\PaperBoxController::class);
+
+
+// Route::get("product/CorrugatedBox", [App\Http\Controllers\CorrugatedBoxController::class, 'store'])->name('create_CorrugatedBox');
+// Route::put("product/CorrugatedBox/{id}", [App\Http\Controllers\CorrugatedBoxController::class, 'update'])->name('update_CorrugatedBox');
+// edit
+Route::resource('product/WetWipes', App\Http\Controllers\Wet_WipesController::class);
+Route::resource('product/cartonbox', App\Http\Controllers\CartonBoxController::class);
+
+// Route::put("WetWipes/{id}", [App\Http\Controllers\Wet_WipesController::class, 'update'])->name('update-Wet_Wipes');
+
+
 Route::resource('file', App\Http\Controllers\FileController::class);
 // edited section
 Route::resource('process', App\Http\Controllers\ProcessController::class);

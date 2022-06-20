@@ -174,12 +174,12 @@
                                             <option value="Wet Wipes Printing Cliché">Wet Wipes Printing Cliché</option>
                                         </select>
                                     @break
-                                    @case('wet_wipes')
+                                    <!-- @case('wet_wipes')
                                         <select name="model" class="form-control">
                                             <option value="" selected disabled>...</option>
                                             <option value="Comes in Saches">Comes in Saches</option>
                                         </select>
-                                    @break
+                                    @break -->
                                     @default
                                         
                                 @endswitch

@@ -1,6 +1,7 @@
 <?php
 
 return[
+    //start edit
     "Pcs"=>"حبة",
     "Kg"=>"كيلو",
     "CTN"=>"كرتون",
@@ -32,17 +33,117 @@ return[
     "Reclosable"=>"غطاء قفل",
     "Handle Paper Bag"=>"كيس ورقي بيد",
     "Gusset Width"=>"عرض القاعدة",
-    "Paper Color"=>"لون الورق",
+    "Paper_Color"=>"لون الورق",
     "Paper Thickens"=>"سماكة الورق",
     "Handle Model"=>"نوع اليد",
     "Twisted Handle"=>"يد مبرومة",
     'Flat Handle'=>"يد مسطحة",
     "Punched-Out Handle"=>" يد مخروق",
-    "Brown Kraft"=>"ورق ابيض",
+    // "Brown Kraft"=>"ورق ابيض",
     "White Paper"=>"ورق كرافت بني",
     "Lid model"=>"موديل الغطاء",
     "Cup Model"=>"موديل الكوب",
     "Handleless Paper Bag"=>"كيس ورقي بدون يد",
+
+    "Punched out"=>"مخروق",
+    "T-shirt"=>"تي شيرت",
+    "Handle"=>"بيد",
+    "Handleless"=>"بدون يد",
+    "Plastic Type"=>"نوع البلاستيك",
+    "HDPE"=>"بولي ايثيلين منخفض الكثافة",
+    "LDPE"=>"بولي ايثيلين مرتفع الكثافة",
+    "Plastic Thickness"=>"سماكة البلاستيك",
+    "Bag Weight"=>"وزن الكيس",
+    "Qty per Kg"=>"الكمية في الكيلو",
+    "Paper Type"=>"نوع الخام",
+    "infercode"=>"انفركود",
+    "duplex"=>"دوبلكس",
+    "brown kraft"=>"كرافت بني",
+    "special paper"=>"سبيشل",
+    "hard cover"=>"سميك",
+    "GSM"=>"جرام",
+
+    "SPOT UV"=>"تأثير يوڤي",
+    
+
+    "Wrapping Paper"=>"ورق تغليف",
+    "Wet Wipes"=>"مناديل معطرة",
+    "Golssy"=>"مطفي",
+    "Matt"=>"لامع",
+    "material"=>"الخامة",
+
+    "Carton_box"=>"علبة كرتونية",
+
+    "Paper_Type"=>"نوع الورق",
+    "lamination"=>"سلوفان",
+    "stamping"=>"بصمة",
+    "printing_type"=>"مقسم داخلي",
+    "printing"=>"طباعة",
+    "embossing"=>"تأثير بروز",
+    "Plastic_Type"=>"نوع البلاستيك",
+    "Qty_per_Kg"=>"الكمية في الكيلو",
+    "HDPE_out"=>" بولي ايثيلين مرتفع الكثافة",
+    "brown_kraft"=>"كرافت بني ",
+    "special_paper"=>"سبيشل",
+
+    "hard_cover"=>"سميك",
+    "gold"=>"ذهب",
+    "silver"=>"فضة",
+    "copper"=>"نحاسي",
+    "bronze"=>"برونزي",
+
+    "Single_Face"=>"وجه واحد",
+    "Double_Face"=>"وجهين",
+
+    "Divider"=>"مع مقسم داخلي",
+    "No_divider"=>"بدون مقسم داخلي",
+
+    "Emboss"=>"برونز داخلي",
+    "Deboss"=>"برونز خارجي",
+
+    "matt_laminate_outer_layer"=>"سلوفان وجه خارجي مطفي",
+    "glossy_laminate_outer_layer"=>" سلوفان وجه خارجي لماع",
+    "matt_laminate_inner_layer"=>"سلوفان وجه داخلي مطفي",
+    "glossy_laminate_inner_layer"=>"سلوفان وجه داخلي لماع",
+    "matt_laminate_inner_&_outer_layer"=>"سلوفان وجهين مطفي",
+    "glossy_laminate_inner_&_outer_layer"=>"سلوفان وجهين لماع",
+    "inner_matt_&_outer_glossy_laminate"=>"سلوفان وجه داخلي مطفي وخارجي لماع",
+    "inner_glossy_&_outer_matt_laminate"=>"سلوفان وجه داخلي لماع و خارجي مطفي",
+    "Wet_Wipes"=>"مناديل معطرة",
+    "brown"=>"ورق بني",
+    "MG"=>"ورق مصقول",
+    "Glassine"=>"ورق نافذ",
+    "Wax"=>"ورق شحم",
+    "PE_Coated"=>"ورق مدمج ",
+
+    "f_flute"=>"اف فلوت",
+    "e_flute"=>" اي فلوت",
+    "b_flute"=>" بي فلوت",
+    "c_flute"=>"سي فلوت",
+    "f_flute_paper_Coated"=>"اف فلوت مدمج",
+    "e_flute_paper_Coated"=>"اي فلوت مدمج",
+    "b_flute_paper_Coated"=>" بي فلوت مدمج",
+    "c_flute_paper_Coated"=>"سي فلوت مدمج ",
+    "f_flute_double_paper_coated"=>"اف فلوت مدمج وجهين",
+    "e_flute_double_paper_coated"=>" اي فلوت مدمج وجهين",
+    "b_flute_double_paper_coated"=>"بي فلوت مدمج وجهين",
+    "c_flute_double_paper_coated"=>"سي فلوت مدمج وجهين",
+
+
+
+
+
+    
+
+
+
+
+    //end edit
+
+
+
+
+
 
 
 
@@ -258,7 +359,7 @@ return[
     "Paper cup"=>"كوب ورقي",
     "Paper Bag With Handle"=>"  كيس ورقي بمقبض",
     "SOS Bag Without Handle"=>" حقيبة  بدون مقبض",
-    "Paper Wrap"=>" غلاف ورق",
+    // "Paper Wrap"=>" غلاف ورق",
     "Paper Knabkins"=>" مقابض الورق",
     "Sachel Bags"=>"أكياس ساشيل",
     "Plastic Cup"=>"كوب بلاستيكي",
@@ -559,8 +660,8 @@ return[
     "Existing Users"=>"عدد الزبائن المسجلين",
     "number of suppliers"=>"عدد الموردين",
     "Quantity of products sold"=>"كمية المنتجات الكلية المباعة",
-    "paper_wraps"=>"اغلفة_ورقية",
-    "paper_nabkins"=>"ورق",
+    "paper_wraps"=>"ورق تغليف",
+    "paper_nabkins"=>"مناديل ورقية نابكن",
     "handle_paper_bags"=>"أكياس_ورق_مقبض",
     "Bag Width"=>"عرض الحقيبة",
     "Bag Height"=>"ارتفاع الحقيبة",
@@ -725,8 +826,8 @@ return[
     "Paper cup"=>"كوب ورقي",
     "Paper Bag With Handle"=>"  كيس ورقي بمقبض",
     "SOS Bag Without Handle"=>" حقيبة  بدون مقبض",
-    "Paper Wrap"=>" غلاف ورق",
-    "Paper Knabkins"=>" مقابض الورق",
+    "Paper Wrap"=>"ورق تغليف",
+    "Paper Knabkins"=>"مناديل ورقية نابكن",
     "Sachel Bags"=>"أكياس ساشيل",
     "Plastic Cup"=>"كوب بلاستيكي",
     "Plastic Bag"=>"حقيبة بلاستيكية",
@@ -737,6 +838,8 @@ return[
     "Email"=>"ايميل",
     "action"=>"حدث",
     "view"=>"عرض",
+    "Coating_Thickness"=>"سماكة الطبقة المدمجة",
+
     "Suppliers Table"=>"جدول الموردين",
     "Add New Supplier "=>"إضافة مورد جديد",
     "CustomersTable"=>"طاولة العملاء",

@@ -52,7 +52,11 @@
                                     <option value="sos_without_handle_bags">@lang('lang.SOS Bag Without Handle')</option>
                                     <option value="plastic_bags">@lang('lang.Plastic Bag')</option>
                                     <option value="sachel_bag">@lang('lang.Sachel Bags')</option>
-                                    <option value="corrugated_boxes">@lang('lang.corrugated Box')</option>
+                                    <!-- <option value="corrugated_boxes">@lang('lang.corrugated Box')</option> -->
+                                    <option value="Wet_Wipes">@lang('lang.Wet Wipes')</option>
+                                    <option value="Carton_box">@lang('lang.Carton_box')</option>
+
+
                                     {{-- others section --}}
                                     <option value="others.paper_plate">@lang('lang.Paper Plate')</option>
                                     <option value="others.platic_plate">@lang('lang.Plastic Plate')</option>
@@ -63,7 +67,7 @@
                                     <option value="others.paper_sticker">@lang('lang.Paper Sticker')</option>
                                     <option value="others.plastic_sticker">@lang('lang.Plastic Sticker')</option>
                                     <option value="others.paper_bowl">@lang('lang.Paper Bowl')</option>
-                                    <option value="others.wet_pipes">@lang('lang.Wet Pipes')</option>
+                                    <!-- <option value="others.wet_pipes">@lang('lang.Wet Pipes')</option> -->
                                     <option value="others.plastic_cutleries">@lang('lang.Plastic Cutleries')</option>
                                     <option value="others.wooden_cutleries">@lang('lang.Wooden Cutleries')</option>
                                     <option value="others.plastic_spoon">@lang('lang.Plastic Spoon')</option>

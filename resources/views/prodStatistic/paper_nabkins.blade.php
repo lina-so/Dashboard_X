@@ -44,11 +44,9 @@
                             <tr>
                             <th class="wd-lg-25p tx-right">@lang('lang.ID')</th>
                                 <th class="wd-lg-25p">@lang('lang.Width')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Height')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Material Colors')</th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Length')</th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Layer Number')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Paper Thickness') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Quantity Per Item') </th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Paper_Color') </th>
 
 
 
@@ -60,11 +58,9 @@
                             <tr>
                             <td  class="tx-right tx-medium tx-inverse">{{$item->id}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->width}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->height}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->matrial_color}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Length}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->layer_number}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->paper_thickness}} </td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->quantity_per_item}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Paper_color}} </td>
 
                             </tr>
                         @endforeach

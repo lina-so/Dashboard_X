@@ -49,7 +49,6 @@
                                 <th class="wd-lg-25p tx-right">@lang('lang.Quantity Per Item')</th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Material Type')</th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Material Colors') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.UOM') </th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Capacity') </th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Thickness') </th>
 
@@ -69,7 +68,6 @@
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->quantity_per_item}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->material_type}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->material_color}} </td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->uom}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->capacity}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->thickness}}</td>
 

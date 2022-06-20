@@ -54,7 +54,7 @@
         <div class="col-lg-12 col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{route('PaperWrap.store')}}" method="POST" enctype="multipart/form-data" autocomplete="off">
+                    <form action="{{route('cartonbox.store')}}" method="POST" enctype="multipart/form-data" autocomplete="off">
                         @csrf
                         {{-- 1 --}}
                         <div class="row">
@@ -80,31 +80,7 @@
                         </div>
                         <br>
                         {{-- 2 --}}
-                        <!-- <div class="row">
-                            <div class="col">
-                                <label for="material_type" class="control-label">@lang('lang.Material Type')</label>
-                                <input type="text" class="form-control" id="inputName" name="material_type">
-                            </div>
-                            <div class="col">
-                                <label for="material_color" class="control-label">@lang('lang.Material Colors')</label>
-                                <input type="text" class="form-control" id="inputName" name="material_color">
-                            </div>
-                        </div>
-                        <br> -->
-                        {{-- 2 --}}
-                        <!-- <div class="row">
-                            <div class="col">
-                                <label for="model" class="control-label">@lang('lang.Model')</label>
-                                <select required name="model" class="form-control">
-                                    placeholder
-                                    <option value="" selected disabled>...</option>
-                                    <option value="Comes in Sheets">Comes in Sheets</option>
-                                    
-                                </select>
-                            </div>
-                            
-                            
-                        </div> -->
+            
                         {{-- 3 --}}
                         <br>
                         {{-- 4 --}}
@@ -113,10 +89,10 @@
                                 <label for="width">@lang('lang.Width')</label>
                                 <input required type="double" name="width" placeholder="width" class="form-control">
                             </div>
-                            <!-- <div class="col">
+                            <div class="col">
                                 <label for="height">@lang('lang.Height')</label>
                                 <input required type="double" name="height" placeholder="height" class="form-control">
-                            </div> -->
+                            </div>
                         </div>
                         <br>
                         <div class="row">
@@ -128,21 +104,10 @@
                                     <option value="Standard">@lang('lang.Standard')</option>
                                 </select>
                             </div>
-                            <!-- <div class="col">
-                                <label for="branding" class="control-label">@lang('lang.Branding')</label>
-                                <select required name="branding" class="form-control">
-                                    <option value="" selected disabled>...</option>
-                                    <option value="Printing">@lang('lang.Printing')</option>
-                                    <option value="Not-Printing">@lang('lang.Not-Printing')</option>
-                                </select>
-                            </div> -->
+                          
                         </div>
                         <br>
-                        <!-- <div class="row">
-                            <div class="col">
-                                <label for="additional_text">@lang('lang.Additional Text')</label>
-                                <textarea required class="form-control" id="exampleTextarea" name="additional_text" rows="3"></textarea>
-                            </div>
+                       
                         </div> -->
                         {{-- 8 --}}
                         <div class="row">
@@ -158,75 +123,95 @@
                         {{-- Category Section --}}
                         <br>
                        
-                        {{-- 4 --}}
-                        <!-- <div class="row">
-                            <div class="col">
-                                <label for="quantity_per_item">@lang('lang.Quantity')</label>
-                                <input required type="number" name="quantity_per_item" placeholder="quantity" class="form-control">
-                            </div>
-                            <div class="col">
-                                <label for="item_weight">@lang('lang.Item Weight')</label>
-                                <input required type="number" name="item_weight" placeholder="quantity" class="form-control">
-                            </div>
-                            
-                        </div>
-                        <br> -->
                         
                         {{-- 6 --}}
                         {{-- 7 --}}
-                        <div class="row">
-                            <div class="col">
-                                <label for="paper_thickness">@lang('lang.Paper Thickness') @lang('lang.GSM')</label>
-                                <input required type="float" name="paper_thickness" placeholder="thickness" class="form-control">
-                            </div>
-                            <!-- <div class="col">
-                                <label for="pe_layer" class="control-label">PE @lang('lang.Layer')</label>
-                                <select required name="pe_layer" class="form-control">
-                                    placeholder
-                                    <option value="" selected disabled>...</option>
-                                    <option value="Yes">@lang('lang.Yes')</option>
-                                    <option value="No">@lang('lang.No')</option>
-                                </select>
-                            </div>                             -->
-                            
-                        </div><br>
-
-                        <!-- <div class="row">
-                            <div class="col">
-                                <label for="merged_layer_thickness" class="control-label">@lang('lang.Merged Layer Thickness')</label>
-                                <input required type="float" name="merged_layer_thickness" placeholder="thickness" class="form-control">
-                            </div>
-                        </div> <br> -->
-
-                        <!-- edit -->
-               
+            
 
                         <div class="row">
                             <div class="col">
                                 <label for="Length" class="control-label">@lang('lang.Length')</label>
                                 <input required type="number" name="Length" placeholder="Length" class="form-control">
                             </div>
-                        </div> <br>
+                       
 
-                        <div class="col">
-                                <label for="Paper_Type" class="control-label">PE @lang('lang.Paper_Type')</label>
-                                <select required name="Paper_Type" class="form-control">
-                                    <!--placeholder-->
-                                    <option value="" selected disabled>...</option>
-                                    <option value="White">@lang('lang.White')</option>
-                                    <option value="brown">@lang('lang.brown')</option>
-                                    <option value="MG">@lang('lang.MG')</option>
-                                    <option value="Glassine">@lang('lang.Glassine')</option>
-                                    <option value="Wax">@lang('lang.Wax')</option>
-                                    <option value="PE_Coated">@lang('lang.PE_Coated')</option>
+                            <div class="col">
+                                    <label for="material_type" class="control-label">PE @lang('lang.Material Type')</label>
+                                    <select required name="material_type" class="form-control">
+                                        <!--placeholder-->
+                                        <option value="" selected disabled>...</option>
+                                        <option value="f_flute">@lang('lang.f_flute')</option>
+                                        <option value="e_flute">@lang('lang.e_flute')</option>
+                                        <option value="b_flute">@lang('lang.b_flute')</option>
+                                        <option value="c_flute">@lang('lang.c_flute')</option>
+                                        <option value="f_flute_paper_Coated">@lang('lang.f_flute_paper_Coated')</option>
+                                        <option value="e_flute_paper_Coated">@lang('lang.e_flute_paper_Coated')</option>
+                                        <option value="b_flute_paper_Coated">@lang('lang.b_flute_paper_Coated')</option>
+                                        <option value="c_flute_paper_Coated">@lang('lang.c_flute_paper_Coated')</option>
+                                        <option value="f_flute_double_paper_coated">@lang('lang.f_flute_double_paper_coated')</option>
+                                        <option value="e_flute_double_paper_coated">@lang('lang.e_flute_double_paper_coated')</option>
+                                        <option value="b_flute_double_paper_coated">@lang('lang.b_flute_double_paper_coated')</option>
+                                        <option value="c_flute_double_paper_coated">@lang('lang.c_flute_double_paper_coated')</option>
+
 
                                 </select>
                             </div>    
+                        </div> <br>
 
-                            <div class="row">
+                        <div class="row">
                             <div class="col">
-                                <label for="Coating_Thickness" class="control-label">@lang('lang.Coating_Thickness')</label>
-                                <input required type="number" name="Coating_Thickness" placeholder="Coating Thickness Mic" class="form-control">
+                                    <label for="lamination">@lang('lang.lamination')</label>
+                                    <select  name="lamination" class="form-control">
+                                        <!--placeholder-->
+                                        <option value="" selected disabled>...</option>
+                                        <option value="matt_laminate_outer_layer">@lang('lang.matt_laminate_outer_layer')</option>
+                                        <option value="glossy_laminate_outer_layer">@lang('lang.glossy_laminate_outer_layer')</option>
+                                        <option value="matt_laminate_inner_layer">@lang('lang.matt_laminate_inner_layer')</option>
+                                        <option value="glossy_laminate_inner_layer">@lang('lang.glossy_laminate_inner_layer')</option>
+                                        <option value="matt_laminate_inner_&_outer_layer">@lang('lang.matt_laminate_inner_&_outer_layer')</option>
+                                        <option value="glossy_laminate_inner_&_outer_layer">@lang('lang.glossy_laminate_inner_&_outer_layer')</option>
+                                        <option value="inner_matt_&_outer_glossy_laminate">@lang('lang.inner_matt_&_outer_glossy_laminate')</option>
+                                        <option value="inner_glossy_&_outer_matt_laminate">@lang('lang.inner_glossy_&_outer_matt_laminate')</option>
+
+                                    </select> 
+                            </div>
+                            <div class="col">
+                                    <label for="stamping">@lang('lang.stamping')</label>
+                                    <select  name="stamping" class="form-control">
+                                        <!--placeholder-->
+                                        <option value="" selected disabled>...</option>
+                                        <option value="gold">@lang('lang.gold')</option>
+                                        <option value="silver">@lang('lang.silver')</option>
+                                        <option value="copper">@lang('lang.copper')</option>
+                                        <option value="bronze">@lang('lang.bronze')</option>
+                                    </select> 
+                            </div>
+                        </div> <br>
+                   
+                        <div class="row">
+
+                            <div class="col">
+                                    <label for="printing_type">@lang('lang.printing_type')</label>
+                                    <select  name="printing_type" class="form-control">
+                                        <!--placeholder-->
+                                        <option value="" selected disabled>...</option>
+                                        <option value="Divider">@lang('lang.Divider')</option>
+                                        <option value="No_divider">@lang('lang.No_divider')</option>
+                                    </select> 
+
+                            </div>
+                            <div class="col">
+                                    <label for="embossing">@lang('lang.embossing')</label>
+                                    <select  name="embossing" class="form-control">
+                                        <!--placeholder-->
+                                        <option value="" selected disabled>...</option>
+                                        <option value="Emboss">@lang('lang.Emboss')</option>
+                                        <option value="Deboss">@lang('lang.Deboss')</option>
+                                    </select> 
+                            </div>
+                            <div class="col">
+                                <label for="description">@lang('lang.Description')</label>
+                                <textarea type="text" class="form-control" name="description" value=""></textarea>
                             </div>
                         </div> <br>
 

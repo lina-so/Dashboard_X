@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/plugins/sumoselect/sumoselect-rtl.css') }}">
     <!--Internal  TelephoneInput css-->
     <link rel="stylesheet" href="{{ URL::asset('assets/plugins/telephoneinput/telephoneinput-rtl.css') }}">
-
+    
     @if (Session::get('locale')== "ar")
 	        	<style>
 					.prod{
@@ -39,7 +39,7 @@
     <div class="breadcrumb-header justify-content-between prod">
         <div class="my-auto">
             <div class="d-flex">
-            <h4 class="content-title mb-0 my-auto">@lang('lang.product') /{{ __('lang.' . $type) }}</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/
+                <h4 class="content-title mb-0 my-auto">@lang('lang.product') /{{ __('lang.' . $type) }}</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/
                     @lang('lang.Add a new one')</span>
             </div>
         </div>
@@ -54,7 +54,9 @@
             <div class="card">
                 <div class="card-body">
                     <form action="{{route('CorrugatedBox.update',$product->id)}}" method="POST" enctype="multipart/form-data" autocomplete="off">
-                        @csrf
+                          @csrf
+                        @method('PUT')
+                       
                         {{-- 1 --}}
                         <div class="row">
                             <input type="text" name="product_class" value="{{$product->product_class}}" class="form-control" hidden>

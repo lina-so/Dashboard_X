@@ -323,9 +323,9 @@
 										@foreach ($marginUserProduct as $mPer )
 											<tr>
 												<td class="tx-right tx-medium tx-inverse">{{$mPer->customer_id}}</td>
+												<td class="tx-right tx-medium tx-inverse">{{$mPer->marginshare}}</td>
 												<td class="tx-right tx-medium tx-inverse">{{$mPer->margin}}</td>
 												<td class="tx-right tx-medium tx-inverse">{{$mPer->marginPer}}</td>
-												<td class="tx-right tx-medium tx-inverse">{{$mPer->marginshare}}</td>
 											</tr>
 										@endforeach
 

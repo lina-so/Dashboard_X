@@ -15,6 +15,10 @@ use App\Models\SosWithoutHandleBag;
 use App\Models\HandlePaperBag;
 use App\Models\Other;
 use App\Models\File;
+use App\Models\Carton_box;
+
+use App\Models\Wet_Wipes;
+
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -135,6 +139,12 @@ class ProductController extends Controller
             case 'corrugated_boxes':
                 $cat=CorrugatedBox::where('product_id','=',$pid)->first();
                 break;
+            case 'Wet_Wipes':
+                    $cat=Wet_Wipes::where('product_id','=',$pid)->first();
+                    break;
+            case 'Carton_box':
+                    $cat=Carton_box::where('product_id','=',$pid)->first();
+                    break;
             default:
                 $cat=Other::where('product_id','=',$pid)->first();
                 return view('product.show',compact('product','product_columns','pcount','category_columns','ccount','cat','files','fcount','name'));
@@ -168,15 +178,15 @@ class ProductController extends Controller
                 break;
             case 'paper_boxes':
                 $paperBox=PaperBox::where('product_id','=',$pid)->first();
-                return view('product.product.paper_cups.edit',compact('product','paperBox','type','files'));
+                return view('product.paper_boxes.edit',compact('product','paperBox','type','files'));
                 break;
             case 'paper_wraps':
                 $paperWrap=PaperWrap::where('product_id','=',$pid)->first();
-                return view('product.'.$class.'.edit',compact('product','paper_wraps','type','files'));
+                return view('product.'.$class.'.edit',compact('product','paperWrap','type','files'));
                 break;
             case 'paper_nabkins':
                 $paperNabkin=PaperNabkins::where('product_id','=',$pid)->first();
-                return view('product.'.$class.'.edit',compact('product','paper_nabkins','type','files'));
+                return view('product.'.$class.'.edit',compact('product','paperNabkin','type','files'));
                 break;
             case 'plastic_cups':
                 $plasticCup=PlasticCup::where('product_id','=',$pid)->first();
@@ -201,6 +211,14 @@ class ProductController extends Controller
             case 'corrugated_boxes':
                 $corrugatedBox=CorrugatedBox::where('product_id','=',$pid)->first();
                 return view('product.'.$class.'.edit',compact('product','corrugatedBox','type','files'));
+                break;
+            case 'Wet_Wipes':
+                    $Wet_Wipes=Wet_Wipes::where('product_id','=',$pid)->first();
+                    return view('product.'.$class.'.edit',compact('product','Wet_Wipes','type','files'));
+                    break;
+            case 'Carton_box':
+                $Carton_box=Carton_box::where('product_id','=',$pid)->first();
+                return view('product.carton_box.edit',compact('product','Carton_box','type','files'));
                 break;
             case 'others':
                 $other=Other::where('product_id','=',$pid)->first();

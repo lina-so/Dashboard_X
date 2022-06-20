@@ -22,6 +22,13 @@ class PlasticBag extends Model
                     'effects',
                     'material_type',
                     'material_color',
+                    'Gusset_Width',
+                    'Plastic_Type',
+                    'Plastic_Thickness',
+                    'Bag_Weight',
+                    'Qty_per_Kg',
+
+
     ];
     public function product(){
         return $this->hasOne(Product::class);

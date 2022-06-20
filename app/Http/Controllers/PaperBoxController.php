@@ -44,14 +44,15 @@ class PaperBoxController extends Controller
         
         // phase 1 Product Saving
         $product->product_class=$request->product_class;
-        $product->model=$request->model;
+        // $product->model=$request->model;
         $product->product_name=$request->product_name;
-        $product->additional_text=$request->additional_text;
+        // $product->additional_text=$request->additional_text;
         $product->product_type=$request->product_type;
-        $product->branding=$request->branding;
+        // $product->branding=$request->branding;
         $product->print_colors=$request->print_colors;
         $product->design_service=$request->design_service;
         $product->logistics_service=$request->logistics_service;
+
         $product->save();
         // $pid=$product->id;
         // phase 1 Completed
@@ -86,26 +87,26 @@ class PaperBoxController extends Controller
 
         // phase 3 paperBox Saving
         $paperBox->product_id=$product->id;
-        $paperBox->material_type=$request->material_type ;
-        $paperBox->material_color=$request->material_color;
-        $paperBox->paper_thickness=$request->paper_thickness;
+        
+        $paperBox->paper_thickness=$request->paper_thickness;//
         $paperBox->width=$request->width;
         $paperBox->height=$request->height;
-        $paperBox->length=$request->length;
-        $paperBox->print_type=$request->print_type;
-        $paperBox->quantity_per_item=$request->quantity_per_item;
-        $paperBox->single_board_width=$request->single_board_width;
-        $paperBox->single_board_height=$request->single_board_height;
-        $paperBox->solovan_layer=$request->solovan_layer;
-        $paperBox->uv_layer=$request->uv_layer;
-        $paperBox->coverage=$request->coverage;
-        $paperBox->uom=$request->uom;
-        $paperBox->capacity=$request->capacity;
-        $paperBox->effects=json_encode($request->effects);
-        $paperBox->glue_points_number=$request->glue_points_number;
-        $paperBox->window_shape=$request->window_shape;
-        $paperBox->window_width=$request->window_width;
-        $paperBox->window_height=$request->window_height;
+        $paperBox->length=$request->length;//
+  
+        $paperBox->effects=json_encode($request->effects);//
+        // $paperBox->glue_points_number=$request->glue_points_number;
+        // $paperBox->window_shape=$request->window_shape;
+        // $paperBox->window_width=$request->window_width;
+        // $paperBox->window_height=$request->window_height;
+
+        $paperBox->paper_type=$request->paper_type;
+        $paperBox->lamination=$request->lamination;
+        $paperBox->stamping=$request->stamping;
+        $paperBox->printing=$request->printing;
+        $paperBox->printing_type=$request->printing_type;
+        $paperBox->embossing=$request->embossing;
+        $paperBox->description=$request->description;
+
         $paperBox->save();
         // dd($paperBox);
         return redirect()->route('product.index');
@@ -143,13 +144,14 @@ class PaperBoxController extends Controller
     public function update(Request $request, $id)
     {
         $product=Product::find($id);
-        $product->product_reference=$request->product_reference;
+        // $product->product_reference=$request->product_reference;
+
         $product->product_class=$request->product_class;
-        $product->model=$request->model;
+        // $product->model=$request->model;
         $product->product_name=$request->product_name;
-        $product->additional_text=$request->additional_text;
+        // $product->additional_text=$request->additional_text;
         $product->product_type=$request->product_type;
-        $product->branding=$request->branding;
+        // $product->branding=$request->branding;
         $product->print_colors=$request->print_colors;
         $product->design_service=$request->design_service;
         $product->logistics_service=$request->logistics_service;
@@ -180,26 +182,53 @@ class PaperBoxController extends Controller
 
         // phase 3 paperBox Saving
         $paperBox=PaperBox::where('product_id','=',$product->id)->get();
-        $paperBox->material_type=$request->material_type ;
-        $paperBox->material_colors=$request->material_colors;
-        $paperBox->paper_thickness=$request->paper_thickness;
+        // $product=Product::findOrFail($product->id)->get();
+        // $paperBox=PaperBox::find($product->id);
+        dd($paperBox);
+
+
+
+
+        $paperBox->product_id=$product->id;
+
+        $paperBox->paper_thickness=$request->paper_thickness;//
         $paperBox->width=$request->width;
         $paperBox->height=$request->height;
-        $paperBox->length=$request->length;
-        $paperBox->print_type=$request->print_type;
-        $paperBox->quantity_per_item=$request->quantity_per_item;
-        $paperBox->single_board_width=$request->single_board_width;
-        $paperBox->single_board_height=$request->single_board_height;
-        $paperBox->solovan_layer=$request->solovan_layer;
-        $paperBox->uv_layer=$request->uv_layer;
-        $paperBox->coverage=$request->coverage;
-        $paperBox->uom=$request->uom;
-        $paperBox->capacity=$request->capacity;
-        $paperBox->effects=json_encode($request->effects);
-        $paperBox->glue_points_number=$request->glue_points_number;
-        $paperBox->window_shape=$request->window_shape;
-        $paperBox->window_width=$request->window_width;
-        $paperBox->window_height=$request->window_height;
+        $paperBox->length=$request->length;//
+  
+        $paperBox->effects=json_encode($request->effects);//
+        // $paperBox->glue_points_number=$request->glue_points_number;
+        // $paperBox->window_shape=$request->window_shape;
+        // $paperBox->window_width=$request->window_width;
+        // $paperBox->window_height=$request->window_height;
+
+        $paperBox->paper_type=$request->paper_type;
+        $paperBox->lamination=$request->lamination;
+        $paperBox->stamping=$request->stamping;
+        $paperBox->printing=$request->printing;
+        $paperBox->printing_type=$request->printing_type;
+        $paperBox->embossing=$request->embossing;
+        $paperBox->description=$request->description;
+
+
+        // $paperBox->material_type=$request->material_type ;
+        // $paperBox->material_colors=$request->material_colors;
+        // $paperBox->paper_thickness=$request->paper_thickness;
+        // $paperBox->width=$request->width;
+        // $paperBox->height=$request->height;
+        // $paperBox->length=$request->length;
+        // $paperBox->print_type=$request->print_type;
+
+        // $paperBox->effects=json_encode($request->effects);
+
+        // $paperBox->paper_type=$request->paper_type;
+        // $paperBox->lamination=$request->lamination;
+        // $paperBox->stamping=$request->stamping;
+        // $paperBox->printing=$request->printing;
+        // $paperBox->printing_type=$request->printing_type;
+        // $paperBox->embossing=$request->embossing;
+        // $paperBox->description=$request->description;
+        // dd($paperBox);
         $paperBox->update();
         return rediret()->route('product.index');
     }

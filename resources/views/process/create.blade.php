@@ -104,17 +104,17 @@
                         <div class="row">
                             <div class="col">
                                 <label for="inputName" class="control-label">Qty</label>
-                                <input type="text" class="form-control" id="inputName" name="Qty"
+                                <input type="text" class="form-control" id="inputName" name="qty"
                                     title=" " >
                             </div>
                             <div class="col">
                                 <label for="inputName" class="control-label">SP</label>
-                                <input type="text" class="form-control" id="inputName" name="SP"
+                                <input type="text" class="form-control" id="inputName" name="sp"
                                     title=" " >
                             </div>
                             <div class="col">
                                 <label for="inputName" class="control-label">PP</label>
-                                <input type="text" class="form-control" id="inputName" name="PP"
+                                <input type="text" class="form-control" id="inputName" name="pp"
                                     title=" " >
                             </div>                            
                         </div> <br>

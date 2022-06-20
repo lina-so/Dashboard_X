@@ -2,6 +2,7 @@
 
 
 return[
+    //start edit
     "Pcs"=>"Pcs",
     "Kg"=>"Kg",
     "CTN"=>"CTN",
@@ -33,7 +34,8 @@ return[
     "Reclosable"=>"Reclosable",
     "Handle Paper Bag"=>"Handle Paper Bag",
     "Gusset Width"=>"Gusset Width",
-    "Paper Color"=>"Paper Color",
+    "Paper_Color"=>"Paper Color",
+
     "Paper Thickens"=>"Paper Thickens",
     "Handle Model"=>"Handle Model",
     "Twisted Handle"=>"Twisted Handle",
@@ -44,8 +46,96 @@ return[
     "Lid model"=>"Lid model",
     "Cup Model"=>"Cup Model",
     "Handleless Paper Bag"=>"Handleless Paper Bag",
+    "Punched out"=>"Punched out",
+    "T-shirt"=>"T-shirt",
+    "Handle"=>"Handle",
+    "Handleless"=>"Handleless",
+    "Plastic Type"=>"Plastic Type",
+    "HDPE"=>"HDPE",
+    "LDPE"=>"LDPE",
+    "Plastic Thickness"=>"Plastic Thickness",
+    "Bag Weight"=>"Bag Weight",
+    "Qty per Kg"=>"Qty per Kg",
+    "Paper_Type"=>"Paper Type",
+    "infercode"=>"infercode",
+    "duplex"=>"duplex",
+    "brown kraft"=>"brown kraft",
+    "special paper"=>"special paper",
+    "hard cover"=>"hard cover",
+    "GSM"=>"GSM",
+
+    "matt laminate outer layer"=>"matt laminate outer layer",
+    "glossy laminate outer layer"=>"glossy laminate outer layer",
+    "matt laminate inner layer"=>"matt laminate inner layer",
+    "glossy laminate inner layer"=>"glossy laminate inner layer",
+
+    "matt laminate inner & outer layer"=>" matt laminate inner & outer layer",
+    "glossy laminate inner & outer layer"=>"glossy laminate inner & outer layer",
+    "SPOT UV"=>"SPOT UV",
 
 
+    "Wrapping Paper"=>"Wrapping Paper",
+    "Wet Wipes"=>"Wet Wipes",
+    "Golssy"=>"Golssy",
+    "Matt"=>"Matt",
+
+    "material"=>"material",
+    "Carton_box"=>"Carton_box",
+    "special_paper"=>"special paper",
+    "hard_cover"=>"hard cover",
+
+    "Paper_Type"=>"Paper Type",
+    "lamination"=>"lamination",
+    "stamping"=>"stamping",
+    "printing_type"=>"printing_type",
+    "embossing"=>"embossing",
+    "Plastic_Type"=>"Plastic_Type",
+    "Qty_per_Kg"=>"Qty_per_Kg",
+    "HDPE_out"=>"HDPE_out",
+    "brown_kraft"=>"brown kraft",
+    "Coating_Thickness"=>"Coating_Thickness",
+    "brown"=>"brown",
+    "MG"=>"MG",
+    "Glassine"=>"Glassine",
+    "Wax"=>"Wax",
+    "PE_Coated"=>"PE Coated",
+
+    "gold"=>"gold",
+    "silver"=>"silver",
+    "copper"=>"copper",
+    "bronze"=>"bronze",
+    "Single_Face"=>"Single Face",
+    "Double Face"=>"Double Face",
+    "Divider"=>"Divider",
+    "No_divider"=>"No divide",
+
+    "Emboss"=>"Emboss",
+    "Deboss"=>"Deboss",
+    "matt_laminate_outer_layer"=>"matt_laminate_outer_layer",
+    "glossy_laminate_outer_layer"=>"glossy_laminate_outer_layer",
+    "matt_laminate_inner_layer"=>"matt_laminate_inner_layer",
+    "glossy_laminate_inner_layer"=>"glossy_laminate_inner_layer",
+    "matt_laminate_inner_&_outer_layer"=>"matt_laminate_inner_&_outer_layer",
+    "glossy_laminate_inner_&_outer_layer"=>"glossy_laminate_inner_&_outer_layer",
+    "inner_matt_&_outer_glossy_laminate"=>"inner_matt_&_outer_glossy_laminate",
+    "inner_glossy_&_outer_matt_laminate"=>"inner_glossy_&_outer_matt_laminate",
+
+    "Wet_Wipes"=>"Wet_Wipes",
+
+    "f_flute"=>"f_flute",
+    "e_flute"=>"e_flute",
+    "b_flute"=>"b_flute",
+    "c_flute"=>"c_flute",
+    "f_flute_paper_Coated"=>"f_flute_paper_Coated",
+    "e_flute_paper_Coated"=>"e_flute_paper_Coated",
+    "b_flute_paper_Coated"=>"b_flute_paper_Coated",
+    "c_flute_paper_Coated"=>"c_flute_paper_Coated",
+    "f_flute_double_paper_coated"=>"f_flute_double_paper_coated",
+    "e_flute_double_paper_coated"=>"e_flute_double_paper_coated",
+    "b_flute_double_paper_coated"=>"b_flute_double_paper_coated",
+    "c_flute_double_paper_coated"=>"c_flute_double_paper_coated",
+   
+        //end edit
 
 
 

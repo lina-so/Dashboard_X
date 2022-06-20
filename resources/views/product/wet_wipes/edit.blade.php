@@ -54,8 +54,10 @@
         <div class="col-lg-12 col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{route('PaperWrap.store')}}" method="POST" enctype="multipart/form-data" autocomplete="off">
+                    <form action="{{route('WetWipes.update',$product->id)}}"  method="POST" enctype="multipart/form-data" autocomplete="off">
+                        @method('PUT')
                         @csrf
+
                         {{-- 1 --}}
                         <div class="row">
                             <input type="text" name="product_class" value="{{$type}}" class="form-control" hidden>
@@ -106,19 +108,19 @@
                             
                         </div> -->
                         {{-- 3 --}}
-                        <br>
+                        <!-- <br> -->
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="width">@lang('lang.Width')</label>
                                 <input required type="double" name="width" placeholder="width" class="form-control">
                             </div>
-                            <!-- <div class="col">
+                            <div class="col">
                                 <label for="height">@lang('lang.Height')</label>
                                 <input required type="double" name="height" placeholder="height" class="form-control">
-                            </div> -->
+                            </div>
                         </div>
-                        <br>
+                        <br> -->
                         <div class="row">
                             <div class="col">
                                 <label for="product_type" class="control-label">@lang('lang.Product Type')</label>
@@ -173,65 +175,57 @@
                         <br> -->
                         
                         {{-- 6 --}}
-                        {{-- 7 --}}
+                        <!-- {{-- 7 --}}
                         <div class="row">
                             <div class="col">
-                                <label for="paper_thickness">@lang('lang.Paper Thickness') @lang('lang.GSM')</label>
+                                <label for="paper_thickness">@lang('lang.Paper Thickness')</label>
                                 <input required type="float" name="paper_thickness" placeholder="thickness" class="form-control">
                             </div>
-                            <!-- <div class="col">
+                            <div class="col">
                                 <label for="pe_layer" class="control-label">PE @lang('lang.Layer')</label>
                                 <select required name="pe_layer" class="form-control">
-                                    placeholder
-                                    <option value="" selected disabled>...</option>
+                                    placeholder-->
+                                    <!-- <option value="" selected disabled>...</option>
                                     <option value="Yes">@lang('lang.Yes')</option>
                                     <option value="No">@lang('lang.No')</option>
                                 </select>
-                            </div>                             -->
+                            </div>                            
                             
-                        </div><br>
+                        </div><br> -->
 
-                        <!-- <div class="row">
-                            <div class="col">
-                                <label for="merged_layer_thickness" class="control-label">@lang('lang.Merged Layer Thickness')</label>
-                                <input required type="float" name="merged_layer_thickness" placeholder="thickness" class="form-control">
-                            </div>
-                        </div> <br> -->
+                      
 
                         <!-- edit -->
                
 
                         <div class="row">
                             <div class="col">
-                                <label for="Length" class="control-label">@lang('lang.Length')</label>
-                                <input required type="number" name="Length" placeholder="Length" class="form-control">
+                                <label for="length" class="control-label">@lang('lang.Length')</label>
+                                <input required type="number" name="length" placeholder="Length" class="form-control">
                             </div>
                         </div> <br>
 
+                        <div class="row">
+                            <div class="col">
+                                <label for="width" class="control-label">@lang('lang.Width')</label>
+                                <input required type="number" name="width" placeholder="width" class="form-control">
+                            </div>
+                        </div> <br>
+                         
                         <div class="col">
-                                <label for="Paper_Type" class="control-label">PE @lang('lang.Paper_Type')</label>
-                                <select required name="Paper_Type" class="form-control">
+                                <label for="material" class="control-label">PE @lang('lang.material')</label>
+                                <select required name="material" class="form-control">
                                     <!--placeholder-->
                                     <option value="" selected disabled>...</option>
-                                    <option value="White">@lang('lang.White')</option>
-                                    <option value="brown">@lang('lang.brown')</option>
-                                    <option value="MG">@lang('lang.MG')</option>
-                                    <option value="Glassine">@lang('lang.Glassine')</option>
-                                    <option value="Wax">@lang('lang.Wax')</option>
-                                    <option value="PE_Coated">@lang('lang.PE_Coated')</option>
-
+                                    <option value="Golssy">@lang('lang.Golssy')</option>
+                                    <option value="Matt">@lang('lang.Matt')</option>
                                 </select>
-                            </div>    
+                            </div>       
 
-                            <div class="row">
-                            <div class="col">
-                                <label for="Coating_Thickness" class="control-label">@lang('lang.Coating_Thickness')</label>
-                                <input required type="number" name="Coating_Thickness" placeholder="Coating Thickness Mic" class="form-control">
-                            </div>
-                        </div> <br>
+                        
 
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary">@lang('lang.Create')</button>
+                            <button type="submit" class="btn btn-primary">@lang('lang.update')</button>
                         </div>
 
 

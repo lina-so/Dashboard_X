@@ -94,10 +94,10 @@
                                     
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="bag_thickness">@lang('lang.Bag Thickness')</label>
                                 <input value="{{$plasticBag->bag_thickness}}" type="float" name="bag_thickness" placeholder="thickness" class="form-control">
-                            </div>
+                            </div> -->
                             
                         </div>
                         {{-- 3 --}}
@@ -111,21 +111,21 @@
                                     <option value="Standard" {{$product->product_type =="Standard" ? 'selected' : ''}}>Standard</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="branding" class="control-label">@lang('lang.Branding')</label>
                                 <select  name="branding" class="form-control">
                                     <option value="Printing" {{$product->branding =="Printing" ? 'selected' : ''}}>Printing</option>
                                     <option value="Not-Printing" {{$product->branding =="Not-Printing" ? 'selected' : ''}}>Not-Printing</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
                         <br>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="additional_text">@lang('lang.Additional Text')</label>
                                 <textarea class="form-control" id="exampleTextarea" name="additional_text" rows="3">{{$product->additional_text}}</textarea>
                             </div>
-                        </div>
+                        </div> -->
                         {{-- 8 --}}
                         <div class="row">
                             <div class="col">
@@ -140,7 +140,7 @@
                         {{-- Category Section --}}
                         <br>
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="material_type" class="control-label">@lang('lang.Material Type')</label>
                                 <input type="text" value="{{$plasticBag->material_type}}" name="material_type" placeholder="quantity" class="form-control">
@@ -153,15 +153,15 @@
                             <div class="col">
                                 <label for="base_type" class="control-label">Base Type</label>
                                 <select  name="base_type" class="form-control">
-                                    <!--placeholder-->
+                                    placeholder
                                     <option value="Base" {{$plasticBag->base_type =="Base" ? 'selected' : ''}}>Base</option>
                                     <option value="No Base" {{$plasticBag->base_type =="No Base" ? 'selected' : ''}}>No Base</option>
                                 </select>
                             </div>
-                        </div>
-                        <br>
+                        </div> -->
+                        <!-- <br> -->
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="quantity_per_item">@lang('lang.Quantity Per Item')</label>
                                 <input value="{{$plasticBag->quantity_per_item}}" type="number" name="quantity_per_item" placeholder="quantity" class="form-control">
@@ -171,7 +171,7 @@
                                 <input value="{{$plasticBag->quantity_per_tons}}" type="number" name="quantity_per_tons" placeholder="quantity" class="form-control">
                             </div>
                             
-                        </div>
+                        </div> -->
                         
                         <br>
                         {{-- 6 --}}
@@ -180,26 +180,54 @@
                                 <label for="width">@lang('lang.Width')</label>
                                 <input value="{{$plasticBag->width}}" type="float" name="width" placeholder="number" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="height">@lang('lang.Height')</label>
                                 <input value="{{$plasticBag->height}}" type="float" name="height" placeholder="number" class="form-control">
-                            </div>
+                            </div> -->
                             <div class="col">
                                 <label for="length">@lang('lang.Length')</label>
                                 <input value="{{$plasticBag->length}}" type="float" name="length" placeholder="number" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="weight">@lang('lang.ًWeight')</label>
                                 <input value="{{$plasticBag->weight}}" type="float" name="weight" placeholder="number" class="form-control">
-                            </div>
+                            </div> -->
                             
                         </div>
                         {{-- 7 --}}
                         <br>
+                        <!-- edit -->
                         
                         <div class="row">
-                            
-                        
+                           <div class="col">
+                                <label for="Gusset_Width">@lang('lang.Gusset Width')</label>
+                                <input required value="{{$plasticBag->Gusset_Width}}" type="float" name="Gusset_Width" placeholder="number" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="Plastic_Type">@lang('lang.Plastic_Type')</label>
+                                <select  required name="Plastic_Type" class="form-control">
+                                    <!--placeholder-->
+                                    <!-- <option value="" selected disabled>...</option> -->
+                                    <option value="HDPE_out" {{$product->HDPE_out =="HDPE_out" ? 'selected' : ''}}>@lang('lang.HDPE_out')</option>
+                                    <option value="LDPE" {{$product->LDPE =="LDPE" ? 'selected' : ''}}>@lang('lang.LDPE')</option>
+                                </select> 
+                        </div>
+ 
+                         <div class="col">
+                                <label for="Plastic_Thickness">@lang('lang.Plastic Thickness')</label>
+                                <input  required  value="{{$plasticBag->Plastic_Thickness}}" type="float" name="Plastic_Thickness" placeholder="number" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="Bag_Weight">@lang('lang.Bag Weight')</label>
+                                <input required  value="{{$plasticBag->Bag_Weight}}"  type="number" name="Bag_Weight" placeholder="number" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="Qty_per_Kg">@lang('lang.Qty_per_Kg')</label>
+                                <input required  value="{{$plasticBag->Qty_per_Kg}}"  type="number" name="Qty_per_Kg" placeholder="number" class="form-control">
+                            </div>
                         </div>
                         
                         <div class="d-flex justify-content-center">

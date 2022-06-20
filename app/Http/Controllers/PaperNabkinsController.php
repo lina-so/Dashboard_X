@@ -43,12 +43,13 @@ class PaperNabkinsController extends Controller
         $paperNabkins = new PaperNabkins;
 
         // phase 1 Product Saving
+
         $product->product_class = $request->product_class;
         $product->product_name = $request->product_name;
-        $product->model = $request->model;
-        $product->additional_text = $request->additional_text;
+        // $product->model = $request->model;
+        // $product->additional_text = $request->additional_text;
         $product->product_type = $request->product_type;
-        $product->branding = $request->branding;
+        // $product->branding = $request->branding;
         $product->print_colors = $request->print_colors;
         $product->design_service = $request->design_service;
         $product->logistics_service = $request->logistics_service;
@@ -85,14 +86,19 @@ class PaperNabkinsController extends Controller
         // phase 2 Completed
 
         // phase 3 paperNabkins Saving
+
         $paperNabkins->product_id = $product->id;
-        $paperNabkins->width = $request->width;
-        $paperNabkins->height = $request->height;
-        $paperNabkins->material_color = $request->material_color;
-        $paperNabkins->quantity_per_item = $request->quantity_per_item;
-        $paperNabkins->layer_number = $request->layer_number;
-        $paperNabkins->paper_thickness = $request->paper_thickness;
-        $paperNabkins->sheets_per_packet = $request->sheets_per_packet;
+        $paperNabkins->width = $request->width;//
+        // $paperNabkins->height = $request->height;
+        // $paperNabkins->material_color = $request->material_color;
+        // $paperNabkins->quantity_per_item = $request->quantity_per_item;
+        $paperNabkins->layer_number = $request->layer_number;//
+        // $paperNabkins->paper_thickness = $request->paper_thickness;
+        // $paperNabkins->sheets_per_packet = $request->sheets_per_packet;
+
+        //edit
+        $paperNabkins->Length = $request->Length;//
+        $paperNabkins->Paper_color = $request->Paper_color;//
 
         $paperNabkins->save();
         return redirect()->route('product.index');
@@ -133,10 +139,10 @@ class PaperNabkinsController extends Controller
         $product = Product::find($id);
         $product->product_class = $request->product_class;
         $product->product_name = $request->product_name;
-        $product->model = $request->model;
-        $product->additional_text = $request->additional_text;
+        // $product->model = $request->model;
+        // $product->additional_text = $request->additional_text;
         $product->product_type = $request->product_type;
-        $product->branding = $request->branding;
+        // $product->branding = $request->branding;
         $product->print_colors = $request->print_colors;
         $product->design_service = $request->design_service;
         $product->logistics_service = $request->logistics_service;
@@ -168,13 +174,15 @@ class PaperNabkinsController extends Controller
         // phase 3 paperNabkins Saving
         $paperNabkins = PaperNabkins::where('product_id', '=', $product->id)->get();
         $paperNabkins->product_id = $product->id;
-        $paperNabkins->width = $request->width;
-        $paperNabkins->height = $request->height;
-        $paperNabkins->material_color = $request->material_color;
-        $paperNabkins->quantity_per_item = $request->quantity_per_item;
-        $paperNabkins->layer_number = $request->layer_number;
-        $paperNabkins->paper_thickness = $request->paper_thickness;
-        $paperNabkins->sheets_per_packet = $request->sheets_per_packet;
+        $paperNabkins->width = $request->width;//
+        // $paperNabkins->height = $request->height;
+        // $paperNabkins->material_color = $request->material_color;
+        // $paperNabkins->quantity_per_item = $request->quantity_per_item;
+        $paperNabkins->layer_number = $request->layer_number;//
+        // $paperNabkins->paper_thickness = $request->paper_thickness;
+        // $paperNabkins->sheets_per_packet = $request->sheets_per_packet;
+        $paperNabkins->Length = $request->Length;//
+        $paperNabkins->Paper_color = $request->Paper_color;//
         $paperNabkins->update();
         return redirect()->route('product.index');
     }

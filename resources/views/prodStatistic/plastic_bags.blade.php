@@ -43,14 +43,13 @@
                         <thead>
                             <tr>
                             <th class="wd-lg-25p tx-right">@lang('lang.ID')</th>
-                                <th class="wd-lg-25p">@lang('lang.Material Colors')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Bag Thickness')</th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Qty_per_Kg')</th> -->
                                 <th class="wd-lg-25p tx-right">@lang('lang.Width')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Height')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Weight') </th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Gusset Width')</th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Plastic_Type') </th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Length') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Quantity Per Item') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Quantity Per Tons') </th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Plastic Thickness') </th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Bag Weight') </th>
 
 
 
@@ -61,14 +60,13 @@
                         @foreach ($PlasticBag as $item)
                         
                         <td  class="tx-right tx-medium tx-inverse">{{$item->id}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->material_color}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->bag_thickness}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Qty_per_Kg}}</td> 
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->width}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->height}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->weight}} </td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Gusset_Width}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Plastic_Type}} </td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->length}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->quantity_per_item}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->quantity_per_tons}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Plastic_Thickness}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->Bag_Weight}}</td>
 
                             </tr>
                         @endforeach

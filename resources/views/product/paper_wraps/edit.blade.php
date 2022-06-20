@@ -82,17 +82,17 @@
                         </div>
                         <br>
                         {{-- 2 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="model" class="control-label">@lang('lang.Model')</label>
                                 <select name="model" class="form-control">
-                                    <!--placeholder-->
+                                    placeholder
                                     <option value="Comes in Sheets" {{$product->product_department =="Comes in Sheets" ? 'selected' : ''}}>Comes in Sheets</option>
                                 </select>
                             </div>
                             
                             
-                        </div>
+                        </div> -->
                         {{-- 3 --}}
                         <br>
                         {{-- 4 --}}
@@ -101,10 +101,10 @@
                                 <label for="width">@lang('lang.Width')</label>
                                 <input value="{{$paperWrap->width}}" type="double" name="width" placeholder="width" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="height">@lang('lang.Height')</label>
                                 <input value="{{$paperWrap->height}}" type="double" name="height" placeholder="height" class="form-control">
-                            </div>
+                            </div> -->
                         </div>
                         <br>
                         <div class="row">
@@ -115,21 +115,21 @@
                                     <option value="Standard" {{$product->product_type =="Standard" ? 'selected' : ''}}>@lang('lang.Standard')</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="branding" class="control-label">@lang('lang.Branding')</label>
                                 <select name="branding" class="form-control">
                                     <option value="Printing" {{$product->branding =="Printing" ? 'selected' : ''}}>@lang('lang.Printing')</option>
                                     <option value="Not-Printing" {{$product->product_type =="Not-Printing" ? 'selected' : ''}}>@lang('lang.Not-Printing')</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
                         <br>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="additional_text">@lang('lang.Additional Text')</label>
                                 <textarea class="form-control" id="exampleTextarea" name="additional_text" rows="3">{{$paperWrap->additional_text}}</textarea>
                             </div>
-                        </div>
+                        </div> -->
                         {{-- 8 --}}
                         <div class="row">
                             <div class="col">
@@ -144,7 +144,7 @@
                         {{-- Category Section --}}
                         <br>
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="material_type" class="control-label">@lang('lang.Material Type')</label>
                                 <input type="text" value="{{$paperWrap->material_type}}" name="material_type" placeholder="quantity" class="form-control">
@@ -155,9 +155,9 @@
                             </div>
                             
                         </div>
-                        <br>
+                        <br> -->
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="quantity_per_item">@lang('lang.Quantity')</label>
                                 <input value="{{$paperWrap->quantity_per_item}}" type="number" name="quantity_per_item" placeholder="quantity" class="form-control">
@@ -169,7 +169,7 @@
                             
                         </div>
                         <br>
-                        
+                         -->
                         {{-- 6 --}}
                         {{-- 7 --}}
                         <div class="row">
@@ -177,20 +177,51 @@
                                 <label for="paper_thickness">@lang('lang.Paper Thickness')</label>
                                 <input value="{{$paperWrap->paper_thickness}}" type="float" name="paper_thickness" placeholder="thickness" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="pe_layer" class="control-label">PE @lang('lang.Layer')</label>
                                 <select name="pe_layer" class="form-control">
-                                    <!--placeholder-->
+                                    placeholder
                                     <option value="Yes" {{$paperWrap->material_color =="Yes" ? 'selected' : ''}}>@lang('lang.yes')</option>
                                     <option value="No" {{$paperWrap->material_color =="No" ? 'selected' : ''}}>@lang('lang.No')</option>
                                 </select>
-                            </div>
-                            <div class="col">
+                            </div> -->
+                            <!-- <div class="col">
                                 <label for="merged_layer_thickness" class="control-label">@lang('lang.Merged Layer Thickness')</label>
                                 <input value="{{$paperWrap->merged_layer_thickness}}" type="float" name="merged_layer_thickness" placeholder="thickness" class="form-control">
-                            </div>
+                            </div> -->
                             
                         </div>
+
+                        <!-- edit -->
+                        <div class="row">
+                            <div class="col">
+                                <label for="Length" class="control-label">@lang('lang.Length')</label>
+                                <input required value="{{$paperWrap->Length}}"  type="number" name="Length" placeholder="Length" class="form-control">
+                            </div>
+                        </div> <br>
+
+                        <div class="col">
+                                <label for="Paper_Type" class="control-label">PE @lang('lang.Paper_Type')</label>
+                                <select required name="Paper_Type" class="form-control">
+                                    <!--placeholder-->
+                                    <!-- <option value="" selected disabled>...</option> -->
+                                    <option value="White" {{$paperWrap->White =="White" ? 'selected' : ''}}>@lang('lang.White')</option>
+                                    <option value="brown" {{$paperWrap->brown =="brown" ? 'selected' : ''}}>@lang('lang.brown')</option>
+                                    <option value="MG" {{$paperWrap->MG =="MG" ? 'selected' : ''}}>@lang('lang.MG')</option>
+                                    <option value="Glassine" {{$paperWrap->Glassine =="Glassine" ? 'selected' : ''}}>@lang('lang.Glassine')</option>
+                                    <option value="Wax" {{$paperWrap->Wax =="Wax" ? 'selected' : ''}}>@lang('lang.Wax')</option>
+                                    <option value="PE_Coated" {{$paperWrap->PE_Coated =="PE_Coated" ? 'selected' : ''}}>@lang('lang.PE_Coated')</option>
+
+                                </select>
+                            </div>    
+
+                            <div class="row">
+                            <div class="col">
+                                <label for="Coating_Thickness" class="control-label">@lang('lang.Coating_Thickness')</label>
+                                <input required value="{{$paperWrap->Coating_Thickness}}"  type="number" name="Coating_Thickness" placeholder="Coating Thickness Mic" class="form-control">
+                            </div>
+                        </div> <br>
+
 
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary">@lang('lang.Update')</button>

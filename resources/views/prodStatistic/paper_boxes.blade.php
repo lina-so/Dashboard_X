@@ -43,20 +43,12 @@
                         <thead>
                             <tr>
                             <th class="wd-lg-25p tx-right">@lang('lang.ID')</th>
-                                <th class="wd-lg-25p">@lang('lang.Material Colors')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Paper Thickness')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Width')</th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.lamination')</th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.Length')</th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Height')</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Length') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Print Type') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Quantity Per Item') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Coverage') </th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.Window Shape') </th>
-
-                                <th class="wd-lg-25p tx-right">@lang('lang.Window Width') </th>
-
-                                <th class="wd-lg-25p tx-right">@lang('lang.Window Heigh') </th>
-
+                                <th class="wd-lg-25p tx-right">@lang('lang.Width') </th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.stamping') </th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.embossing') </th>
 
 
 
@@ -68,18 +60,12 @@
                         
                             <tr>
                             <td  class="tx-right tx-medium tx-inverse">{{$item->id}}</td>
-                            <td  class="tx-right tx-medium tx-inverse">{{$item->material_type}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->material_colors}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->paper_thickness}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->width}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->lamination}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->length}}</td>
                                 <td  class="tx-right tx-medium tx-inverse">{{$item->height}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->length}} </td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->print_type}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->quantity_per_item}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->coverage}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->window_shape}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->window_width}}</td>
-                                <td  class="tx-right tx-medium tx-inverse">{{$item->window_height}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->width}} </td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->stamping}}</td>
+                                <td  class="tx-right tx-medium tx-inverse">{{$item->embossing}}</td>
 
 
 

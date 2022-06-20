@@ -11,12 +11,14 @@ class PaperNabkins extends Model
     protected $fillable=[
         'product_id',
         'width',
-        'height',
-        'metrial_color',
+        // 'height',
+        // 'metrial_color',
         'layer_number',
-        'paper_thickness',
-        'quantity_per_item',
-        'sheets_per_packet',
+        // 'paper_thickness',
+        // 'quantity_per_item',
+        // 'sheets_per_packet',
+        'Length',
+        'Paper_color',
     ];
     public function product(){
         return $this->hasOne(Product::class);

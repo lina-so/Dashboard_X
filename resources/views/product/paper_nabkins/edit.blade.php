@@ -59,7 +59,7 @@
                         {{-- 1 --}}
                         <div class="row">
                             <input type="text" name="product_class" value="{{$product->product_class}}" class="form-control" hidden>
-                            <div class="col">
+                            <div class="col">s
                                 <label for="product_name" class="control-label">@lang('lang.Product Name')</label>
                                 <input required type="text" value="{{$product->product_name}}" name="product_name" placeholder="Product Name" class="form-control">
                             </div>
@@ -82,15 +82,15 @@
                         </div>
                         <br>
                         {{-- 2 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="model" class="control-label">@lang('lang.Model')</label>
                                 <select  name="model" class="form-control">
-                                    <!--placeholder-->
+                                    placeholder
                                     <option value="Comes in Pockets" {{$product->model =="Logistic Service" ? 'selected' : ''}}>Comes in Pockets</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                         {{-- 3 --}}
                         <br>
                         {{-- 4 --}}
@@ -99,10 +99,10 @@
                                 <label for="width">@lang('lang.Width')</label>
                                 <input value="{{$paperNabkin->width}}" type="double" name="width" placeholder="width" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="height">@lang('lang.Height')</label>
                                 <input value="{{$paperNabkin->height}}" type="double" name="height" placeholder="height" class="form-control">
-                            </div>
+                            </div> -->
                         </div>
                         <br>
                         <div class="row">
@@ -113,22 +113,22 @@
                                     <option value="Standard" {{$product->product_type =="Standard" ? 'selected' : ''}}>@lang('lang.Standard')</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="branding" class="control-label">@lang('lang.Branding')</label>
                                 <select  name="branding" class="form-control">
                                     <option value="" selected disabled>...</option>
                                     <option value="Printing" {{$product->branding =="Printing" ? 'selected' : ''}}>@lang('lang.Printing')</option>
                                     <option value="Not-Printing" {{$product->branding =="Not-Printing" ? 'selected' : ''}}>@lang('lang.Not-Printing')</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
                         <br>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="additional_text">@lang('lang.Additional Text')</label>
                                 <textarea class="form-control" id="exampleTextarea" name="additional_text" rows="3">{{$product->additional_text}}</textarea>
                             </div>
-                        </div>
+                        </div> -->
                         {{-- 8 --}}
                         <div class="row">
                             <div class="col">
@@ -143,19 +143,19 @@
                         {{-- Category Section --}}
                         <br>
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="material_colors" class="control-label">@lang('lang.Material Colors')</label>
                                 <input type="text" value="{{$paperNabkin->material_colors}}" name="material_type" placeholder="quantity" class="form-control">
                             </div>
                         </div>
-                        <br>
+                        <br> -->
                         {{-- 4 --}}
                         <div class="row">
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="quantity_per_item">@lang('lang.Quantity')</label>
                                 <input value="{{$paperNabkin->quantity_per_item}}" type="number" name="quantity_per_item" placeholder="quantity" class="form-control">
-                            </div>
+                            </div> -->
                             
                             <div class="col">
                                 <label for="layer_number" class="control-label">@lang('lang.Layer Number')</label>
@@ -166,7 +166,7 @@
                         
                         {{-- 6 --}}
                         {{-- 7 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="paper_thickness">@lang('lang.Paper Thickness')</label>
                                 <input value="{{$paperNabkin->paper_thickness}}" type="float" name="paper_thickness" placeholder="thickness" class="form-control">
@@ -177,7 +177,21 @@
                                 <input value="{{$paperNabkin->sheets_per_packet}}" type="number" name="sheets_per_packet" placeholder="thickness" class="form-control">
                             </div>
                             
-                        </div>
+                        </div> -->
+                        <!-- edit -->
+                        <div class="col">
+                                    <label for="Length">@lang('lang.Length')</label>
+                                    <input required value="{{$paperNabkin->Length}}" type="number" name="Length" placeholder="Length" class="form-control">
+                                </div>
+
+                                <div class="col">
+                                    <label for="Paper_color" class="control-label">@lang('lang.Paper color')</label>
+                                    <select required name="Paper_color" class="form-control">
+                                        <!-- <option value="" selected disabled>...</option> -->
+                                    <option value="White" {{$paperNabkin->White =="White" ? 'selected' : ''}}>@lang('lang.White')</option>
+                                    <option value="brown" {{$paperNabkin->brown =="brown" ? 'selected' : ''}}>@lang('lang.brown')</option>
+                                    </select>
+                                </div>
 
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary">@lang('lang.Update')</button>

@@ -11,14 +11,18 @@ class PaperWrap extends Model
     protected $fillable=[
         'product_id',
         'width',
-        'height',
-        'metrial_type',
-        'metrial_color',
+        // 'height',
+        // 'metrial_type',
+        // 'metrial_color',
         'paper_thickness',
-        'quantity_per_item',
-        'item_weight',
-        'pe_layer',
-        'merged_layer_thickness',
+        // 'quantity_per_item',
+        // 'item_weight',
+        // 'pe_layer',
+        // 'merged_layer_thickness',
+        'Length',
+        'Paper_Type',
+        'Coating_Thickness',
+
     ];
     public function product(){
         return $this->hasOne(Product::class);

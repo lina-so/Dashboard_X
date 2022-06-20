@@ -87,16 +87,16 @@
                                 <select required name="model" class="form-control">
                                     <!--placeholder-->
                                     <option value="" selected disabled>...</option>
-                                    <option value="T-Shirt">T-Shirt</option>
-                                    <option value="Punched-Out">Punched-Out</option>
-                                    <option value="With Handle">With Handle</option>
-                                    <option value="Without Handle">Without Handle</option>
+                                    <option value="T-Shirt">@lang('lang.T-Shirt')</option>
+                                    <option value="Punched-Out">@lang('lang.Punched out')</option>
+                                    <option value="Handle">@lang('lang.Handle')</option>
+                                    <option value="Handleless">@lang('lang.Handleless')</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="bag_thickness">@lang('lang.Bag Thickness')</label>
                                 <input required type="float" name="bag_thickness" placeholder="thickness" class="form-control">
-                            </div>
+                            </div> -->
                             
                         </div>
                         {{-- 3 --}}
@@ -111,22 +111,22 @@
                                     <option value="Standard">@lang('lang.Standard')</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="branding" class="control-label">@lang('lang.Branding')</label>
                                 <select required name="branding" class="form-control">
                                     <option value="" selected disabled>...</option>
                                     <option value="Printing">@lang('lang.Printing')</option>
                                     <option value="Not-Printing">@lang('lang.Not-Printing')</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
                         <br>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="additional_text">@lang('lang.Additional Text')</label>
                                 <textarea required class="form-control" id="exampleTextarea" name="additional_text" rows="3"></textarea>
                             </div>
-                        </div>
+                        </div> -->
                         {{-- 8 --}}
                         <div class="row">
                             <div class="col">
@@ -141,7 +141,7 @@
                         {{-- Category Section --}}
                         <br>
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="material_type" class="control-label">@lang('lang.Material Type')</label>
                                 <input type="text" class="form-control" id="inputName" name="material_type">
@@ -152,21 +152,21 @@
                             </div>
                             
                         </div>
-                        <br>
+                        <br> -->
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="base_type" class="control-label"></label>
                                 <select required name="base_type" class="form-control">
-                                    <!--placeholder-->
+                                    placeholder
                                     <option value="" selected disabled>...</option>
                                     <option value="Base">Base</option>
                                     <option value="No Base">No Base</option>
                                 </select>
                             </div>
-                        </div> <br>
+                        </div> <br> -->
                         {{-- 4 --}}
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
                                 <label for="quantity_per_item">@lang('lang.Quantity Per Item')</label>
                                 <input  type="number" name="quantity_per_item" placeholder="quantity" class="form-control">
@@ -176,7 +176,7 @@
                                 <input  type="number" name="quantity_per_tons" placeholder="quantity" class="form-control">
                             </div>
                             
-                        </div>
+                        </div> -->
                         
                         <br>
                         {{-- 6 --}}
@@ -185,10 +185,10 @@
                                 <label for="width">@lang('lang.Width')</label>
                                 <input required type="float" name="width" placeholder="number" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="height">@lang('lang.Height')</label>
                                 <input required type="float" name="height" placeholder="number" class="form-control">
-                            </div>
+                            </div> -->
                             
                             
                         </div>
@@ -200,11 +200,42 @@
                                 <label for="length">@lang('lang.Length')</label>
                                 <input required type="float" name="length" placeholder="number" class="form-control">
                             </div>
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="weight">@lang('lang.Weight')</label>
                                 <input  type="float" name="weight" placeholder="number" class="form-control">
-                            </div>
+                            </div> -->
                         </div> <br>
+                        <!-- edit -->
+
+                           <div class="col">
+                                <label for="Gusset_Width">@lang('lang.Gusset Width')</label>
+                                <input required type="float" name="Gusset_Width" placeholder="number" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="Plastic_Type">@lang('lang.Plastic_Type')</label>
+                                <select  required name="Plastic_Type" class="form-control">
+                                    <!--placeholder-->
+                                    <option value="" selected disabled>...</option>
+                                    <option value="HDPE_out">@lang('lang.HDPE_out')</option>
+                                    <option value="LDPE">@lang('lang.LDPE')</option>
+                                </select> 
+                        </div>
+ 
+                         <div class="col">
+                                <label for="Plastic_Thickness">@lang('lang.Plastic Thickness')</label>
+                                <input  required type="float" name="Plastic_Thickness" placeholder="number" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="Bag_Weight">@lang('lang.Bag Weight')</label>
+                                <input required  type="number" name="Bag_Weight" placeholder="number" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="Qty_per_Kg">@lang('lang.Qty_per_Kg')</label>
+                                <input required  type="number" name="Qty_per_Kg" placeholder="number" class="form-control">
+                            </div>
                         
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary">@lang('lang.Create')</button>

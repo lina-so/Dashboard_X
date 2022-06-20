@@ -49,7 +49,7 @@ class HomeController extends Controller
         $marginUserProduct = DB::table('processes as pj')
             ->join('projects as j', 'j.id', '=', 'pj.project_id')
             ->where('pj.supplier_contract_status', 'yes')
-            ->select(DB::raw('round((pj.qty*pj.pp)-pj.sp,1)  as  margin'), DB::raw('round((pj.qty*pj.pp)-pj.sp,1)*100 marginPer'), DB::raw('round(sum(pj.sp)/sum(pj.pp),4) as marginshare'), 'j.customer_id')
+            ->select(DB::raw('round((pj.qty*pj.pp)-pj.sp,4) as margin'), DB::raw('round((pj.qty*pj.pp)-pj.sp,4)*100 as  marginPer'), DB::raw('round(sum(pj.sp)/sum(pj.pp),4) as marginshare'), 'j.customer_id')
             ->groupBy('j.customer_id')
             ->get();
 
@@ -73,7 +73,7 @@ class HomeController extends Controller
         $prouductSuccess = DB::select('select count(*) as count  from processes where supplier_contract_status="yes"');
         $prouductFailed = DB::select('select count(*) as count  from processes where supplier_contract_status="failed"');
 
-        // dd($productStatus);
+        // dd($marginUserProduct);
 
         // return view('home',compact('marginPer','earn','prouductPending','prouductSuccess','prouductFailed','currentUsers','numberOfSuppliers','NumberOfProuductSaleing','marginUserProduct'));
         return view('home', compact('earn', 'NumberOfProuductSaleing', 'prouductPending', 'prouductSuccess', 'prouductFailed', 'currentUsers', 'numberOfSuppliers', 'marginPer', 'marginUserProduct', 'productStatus'));

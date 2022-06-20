@@ -71,6 +71,9 @@ class Product extends Model
     public function process(){
         return $this->belongsTo(Process::class);
     }
+    public function Wet_Wipes(){
+        return $this->belongsTo(Wet_Wipes::class);
+    }
     public function getTableColumns() {
         return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
     }

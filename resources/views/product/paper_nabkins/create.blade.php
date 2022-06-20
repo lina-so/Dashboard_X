@@ -79,18 +79,18 @@
                             </div>
                             <br>
                             {{-- 2 --}}
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col">
                                     <label for="model" class="control-label">@lang('lang.Model')</label>
                                     <select required name="model" class="form-control">
-                                        <!--placeholder-->
+                                        placeholder
                                         <option value="" selected disabled>...</option>
                                         <option value="Comes in Pockets">@lang('lang.Comes in Pockets')</option>
                                     </select>
                                 </div>
                                 
                                 
-                            </div>
+                            </div> -->
                             {{-- 3 --}}
                             <br>
                             {{-- 4 --}}
@@ -99,10 +99,10 @@
                                     <label for="width">@lang('lang.Width')</label>
                                     <input required type="double" name="width" placeholder="width" class="form-control">
                                 </div>
-                                <div class="col">
+                                <!-- <div class="col">
                                     <label for="height">@lang('lang.Height')</label>
                                     <input required type="double" name="height" placeholder="height" class="form-control">
-                                </div>
+                                </div> -->
                             </div>
                             <br>
                             <div class="row">
@@ -114,22 +114,22 @@
                                         <option value="Standard">@lang('lang.Standard')</option>
                                     </select>
                                 </div>
-                                <div class="col">
+                                <!-- <div class="col">
                                     <label for="branding" class="control-label">@lang('lang.Branding')</label>
                                     <select required name="branding" class="form-control">
                                         <option value="" selected disabled>...</option>
                                         <option value="Printing">@lang('lang.Printing')</option>
                                         <option value="Not-Printing">@lang('lang.Not-Printing')</option>
                                     </select>
-                                </div>
+                                </div> -->
                             </div>
                             <br>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col">
                                     <label for="additional_text">@lang('lang.Additional Text')</label>
                                     <textarea required class="form-control" id="exampleTextarea" name="additional_text" rows="3"></textarea>
                                 </div>
-                            </div>
+                            </div> -->
                             {{-- 8 --}}
                             <div class="row">
                                 <div class="col">
@@ -144,19 +144,19 @@
                             {{-- Category Section --}}
                             <br>
                             {{-- 4 --}}
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col">
                                     <label for="material_color" class="control-label">@lang('lang.Material Colors')</label>
                                     <input required type="text" class="form-control" id="inputName" name="material_color">
                                 </div>
-                            </div>
+                            </div> -->
                             <br>
                             {{-- 4 --}}
                             <div class="row">
-                                <div class="col">
+                                <!-- <div class="col">
                                     <label for="quantity_per_item">@lang('lang.Quantity')</label>
                                     <input required type="number" name="quantity_per_item" placeholder="quantity" class="form-control">
-                                </div>
+                                </div> -->
                                 
                                 <div class="col">
                                     <label for="layer_number" class="control-label">@lang('lang.Layer Number')</label>
@@ -171,7 +171,7 @@
                             
                             {{-- 6 --}}
                             {{-- 7 --}}
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col">
                                     <label for="paper_thickness">@lang('lang.Paper Thickness')</label>
                                     <input required type="float" name="paper_thickness" placeholder="thickness" class="form-control">
@@ -182,8 +182,23 @@
                                     <input required type="number" name="sheets_per_packet" placeholder="thickness" class="form-control">
                                 </div>
                                 
-                            </div> <br>
+                            </div> <br> -->
 
+                            <!-- edit -->
+
+                            <div class="col">
+                                    <label for="Length">@lang('lang.Length')</label>
+                                    <input required type="number" name="Length" placeholder="Length" class="form-control">
+                                </div>
+
+                                <div class="col">
+                                    <label for="Paper_color" class="control-label">@lang('lang.Paper_Color')</label>
+                                    <select required name="Paper_color" class="form-control">
+                                        <option value="" selected disabled>...</option>
+                                        <option value="White">White</option>
+                                        <option value="brown">brown</option>
+                                    </select>
+                                </div>
                             <div class="d-flex justify-content-center">
                                 <button type="submit" class="btn btn-primary">@lang('lang.Create')</button>
                             </div>
