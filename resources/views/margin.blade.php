@@ -18,9 +18,9 @@
         <div class="modal-body">
             <form action="/search" method="GET" enctype="multipart/form-data">
                 @csrf
-                <label for="">@lang('lang.Start Date')</label>
+                <label for="datefrom">@lang('lang.Start Date')</label>
                 <input class="form-control" type="date"  name="datefrom" > <br> 									
-                <label for="">@lang('lang.End Date')</label>
+                <label for="dateTo">@lang('lang.End Date')</label>
                 <input class="form-control" type="date"  name="dateTo" > <br> 
                 <input type="submit" value="@lang('lang.Find')" class="btn ripple btn-primary">									
             </form>	
@@ -44,7 +44,7 @@
                             <th class="wd-lg-25p tx-right">@lang('lang.Proccess ID') </th>
                                 <th class="wd-lg-25p">@lang('lang.Margin')</th>
                                 <th class="wd-lg-25p tx-right">@lang('lang.Margin')%</th>
-                                <th class="wd-lg-25p tx-right">@lang('lang.PP') $</th>
+                                <th class="wd-lg-25p tx-right">@lang('lang.pp') $</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -53,7 +53,7 @@
                             <td  class="tx-right tx-medium tx-inverse">{{$item->id}}</td>
                             <td  class="tx-right tx-medium tx-inverse">{{$item->margin}}</td>
                             <td  class="tx-right tx-medium tx-inverse">{{$item->marginPer}}</td>
-                            <td  class="tx-right tx-medium tx-inverse">{{$item->PP}} $</td>
+                            <td  class="tx-right tx-medium tx-inverse">{{$item->pp}} $</td>
                             
                         @endforeach
             

@@ -53,6 +53,7 @@ class HomeController extends Controller
             ->groupBy('j.customer_id')
             ->get();
 
+        
         //quantity of product sale
         $NumberOfProuductSaleing = DB::table('processes as pj')
             ->join('products as pd', 'pj.product_id', '=', 'pd.id')
@@ -73,7 +74,7 @@ class HomeController extends Controller
         $prouductSuccess = DB::select('select count(*) as count  from processes where supplier_contract_status="yes"');
         $prouductFailed = DB::select('select count(*) as count  from processes where supplier_contract_status="failed"');
 
-        // dd($marginUserProduct);
+        // dd($mm);
 
         // return view('home',compact('marginPer','earn','prouductPending','prouductSuccess','prouductFailed','currentUsers','numberOfSuppliers','NumberOfProuductSaleing','marginUserProduct'));
         return view('home', compact('earn', 'NumberOfProuductSaleing', 'prouductPending', 'prouductSuccess', 'prouductFailed', 'currentUsers', 'numberOfSuppliers', 'marginPer', 'marginUserProduct', 'productStatus'));

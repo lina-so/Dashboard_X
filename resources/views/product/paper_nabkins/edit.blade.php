@@ -185,7 +185,7 @@
                                 </div>
 
                                 <div class="col">
-                                    <label for="Paper_color" class="control-label">@lang('lang.Paper color')</label>
+                                    <label for="Paper_color" class="control-label">@lang('lang.Paper_Color')</label>
                                     <select required name="Paper_color" class="form-control">
                                         <!-- <option value="" selected disabled>...</option> -->
                                     <option value="White" {{$paperNabkin->White =="White" ? 'selected' : ''}}>@lang('lang.White')</option>
@@ -194,7 +194,7 @@
                                 </div>
 
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary">@lang('lang.Update')</button>
+                            <button type="submit" class="btn btn-primary">@lang('lang.update')</button>
                         </div>
 
 

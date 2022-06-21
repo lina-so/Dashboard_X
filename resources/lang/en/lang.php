@@ -121,6 +121,12 @@ return[
     "inner_glossy_&_outer_matt_laminate"=>"inner_glossy_&_outer_matt_laminate",
 
     "Wet_Wipes"=>"Wet_Wipes",
+    "paper boxes"=>"paper boxes",
+    "paper nabkins"=>"paper nabkins",
+    "Carton box"=>"Carton box",
+    "paper wraps"=>"paper wraps",
+    "plastic bags"=>"plastic bags",
+    
 
     "f_flute"=>"f_flute",
     "e_flute"=>"e_flute",

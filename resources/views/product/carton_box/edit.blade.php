@@ -216,7 +216,7 @@
 
 
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary">@lang('lang.Update')</button>
+                            <button type="submit" class="btn btn-primary">@lang('lang.update')</button>
                         </div>
 
 

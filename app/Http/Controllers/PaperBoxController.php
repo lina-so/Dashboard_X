@@ -181,10 +181,10 @@ class PaperBoxController extends Controller
         // phase 2 Completed
 
         // phase 3 paperBox Saving
-        $paperBox=PaperBox::where('product_id','=',$product->id)->get();
+        $paperBox=PaperBox::where('product_id','=',$product->id)->first();
         // $product=Product::findOrFail($product->id)->get();
         // $paperBox=PaperBox::find($product->id);
-        dd($paperBox);
+        // dd($paperBox);
 
 
 
@@ -230,7 +230,7 @@ class PaperBoxController extends Controller
         // $paperBox->description=$request->description;
         // dd($paperBox);
         $paperBox->update();
-        return rediret()->route('product.index');
+        return redirect()->route('product.index');
     }
 
     /**

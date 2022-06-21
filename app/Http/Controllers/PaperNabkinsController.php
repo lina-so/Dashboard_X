@@ -172,7 +172,7 @@ class PaperNabkinsController extends Controller
         // phase 2 Completed
 
         // phase 3 paperNabkins Saving
-        $paperNabkins = PaperNabkins::where('product_id', '=', $product->id)->get();
+        $paperNabkins = PaperNabkins::where('product_id', '=', $product->id)->first();
         $paperNabkins->product_id = $product->id;
         $paperNabkins->width = $request->width;//
         // $paperNabkins->height = $request->height;

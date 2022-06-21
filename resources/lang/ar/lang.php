@@ -101,6 +101,8 @@ return[
     "Emboss"=>"برونز داخلي",
     "Deboss"=>"برونز خارجي",
 
+    "paper boxes"=>"صندوق ورقي",
+
     "matt_laminate_outer_layer"=>"سلوفان وجه خارجي مطفي",
     "glossy_laminate_outer_layer"=>" سلوفان وجه خارجي لماع",
     "matt_laminate_inner_layer"=>"سلوفان وجه داخلي مطفي",
@@ -662,6 +664,17 @@ return[
     "Quantity of products sold"=>"كمية المنتجات الكلية المباعة",
     "paper_wraps"=>"ورق تغليف",
     "paper_nabkins"=>"مناديل ورقية نابكن",
+    "paper nabkins"=>"مناديل ورقية نابكن",
+    "Carton box"=>"علبة كرتونية",
+
+    "paper wraps"=>"ورق تغليف",
+    "plastic bags"=>"اكياس بلاستيك",
+
+
+
+
+
+
     "handle_paper_bags"=>"أكياس_ورق_مقبض",
     "Bag Width"=>"عرض الحقيبة",
     "Bag Height"=>"ارتفاع الحقيبة",
